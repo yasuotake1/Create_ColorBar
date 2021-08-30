@@ -15,13 +15,13 @@
 	</echo>
 </target>
  <target name="compress" depends="" description="generate the distribution">
- 	<jar jarfile="Create_ColorBar.jar">
+ 	<jar jarfile="../Create_ColorBar.jar">
  		<fileset dir="." includes="plugins.config" />
 		<fileset dir="${build}" includes="**/*.*" />
  		<manifest>
  		 	 	      <attribute name="Built-By" value="${user.name}"/>
  		</manifest>
  	</jar>
-    <copy file="Create_ColorBar.jar" toDir="${pluginsDir}" />
+    <copy file="../Create_ColorBar.jar" toDir="${pluginsDir}" />
   </target>
 </project>
