@@ -2,12 +2,12 @@ import ij.*;
 import ij.gui.NewImage;
 import ij.plugin.PlugIn;
 
-public class CreateColorBar implements PlugIn {
+public class Create_ColorBar implements PlugIn {
 	ImagePlus impCurrent;
 	ImagePlus impBar;
 	ImagePlus impFlat;
 	
-	public static int width = 30;
+	public static int width = 32;
 	public static int height = 256;
 	
 	public void run(String arg) {
@@ -16,7 +16,8 @@ public class CreateColorBar implements PlugIn {
 			IJ.error("Current image is not a single channel (value) image.");
 			return;
 		}
-		IJ.log("Current image range: min = " + String.valueOf(impCurrent.getDisplayRangeMin()) + ", max = " + String.valueOf(impCurrent.getDisplayRangeMax()));
+		IJ.log("Display range of current image:");
+		IJ.log("min = " + String.valueOf(impCurrent.getDisplayRangeMin()) + ", max = " + String.valueOf(impCurrent.getDisplayRangeMax()));
 		
 		impBar = NewImage.createImage("ColorBar", width, height, 1, 32, NewImage.FILL_BLACK);
 		float[] pixels = (float[])impBar.getProcessor().getPixels();
