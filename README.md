@@ -9,5 +9,6 @@ An RGB triangle with white or black background is created and can be used as the
 ![RGBtriagle_white.png](examples/RGBtriangle_white.png) ![RGBtriagle_black.png](examples/RGBtriangle_black.png)
 
 # Installation
-Place Create_ColoBar.jar in /plugins/ folder.
+Place Create_ColoBar.jar in /plugins/ folder and restart ImageJ.  
+Select 'Create color bar' or 'Create RGB triangle' in Images> menu.
 
