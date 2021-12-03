@@ -1,4 +1,5 @@
 # Create_ColorBar
+<<<<<<< HEAD
 ImageJ plugin to create a color bar and RGB triangle. These are for color legends of Imaging XAFS data figures.
 
 A color bar is created using the lookup table of current non-RGB image.
@@ -9,3 +10,6 @@ An RGB triangle with white or black background is created and can be used with
 
 # Installation
 Place Create_ColoBar.jar in /plugins/ folder.
+=======
+ImageJ plugin to create a color bar and RGB triangle.
+>>>>>>> refs/remotes/origin/main
