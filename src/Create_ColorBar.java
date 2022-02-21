@@ -12,6 +12,10 @@ public class Create_ColorBar implements PlugIn {
 	
 	public void run(String arg) {
 		impCurrent = WindowManager.getCurrentImage();
+		if(impCurrent == null) {
+			IJ.error("There are no images open.");
+			return;
+		}
 		if(impCurrent.getBitDepth() == 24) {
 			IJ.error("Current image is not a single channel (value) image.");
 			return;
